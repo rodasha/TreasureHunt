@@ -27,6 +27,13 @@
       .empty{
         transform:scale(0.8);
       }
+      form{
+       background:skyblue;
+       margin-right:8px;
+      }
+      .rule{
+       background:pink;
+      }
     </style>
   </head>
   <body>
@@ -58,11 +65,13 @@
       }
     </script>
     <form name="count">
-      <input type="text" value="3">times left<br>
+      <input type="text" value="3">times<br>
       <input type="button" value="Reset" onclick="window.location.reload();">
     </form>
-    <h1>Rule</h1>
-    <p>① You can click up to three times. </p>
-    <p>② The distance to the treasure is written on the empty box.</p>
+    <div class="rule">
+      Rule<br>
+      ① You can click up to three times.<br>
+      ② The distance to the treasure is written on the empty box.
+    </div>
     </boby>
 </html>
