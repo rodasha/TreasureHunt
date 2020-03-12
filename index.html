@@ -4,13 +4,8 @@
 <meta charset="utf-8">
 <title>Treasure Hunt!</title>
 <style>
-  header{
-    display:flex;
-    flex-wrap:wrap;
-    width:580px;
-    height:580px;
-  }
 body{
+width:580px;
 display:flex;
 flex-wrap:wrap;
 }
@@ -35,7 +30,6 @@ transform:scale(0.8);
 </style>
 </head>
 <body>
-  <header>
 <script>
 const num=10;
 const treasure=Math.floor(Math.random()*num*num);
@@ -61,12 +55,10 @@ var sec=document.count.elements[0].value;
 document.count.elements[0].value=parseInt(sec-1);
 }}});
 document.body.appendChild(div);
-if((i+1)%num==0)document.body.append("</n>");
 }
 </script>
-  </header>
 <form name="count">
-<input type="text" value="3">times left<br>
+<input type="text" value="3">times left
 <input type="button" value="Reset" onclick="window.location.reload();">
 </form>
 Rule<br>
